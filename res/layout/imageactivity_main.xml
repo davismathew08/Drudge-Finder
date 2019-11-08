@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageactivityy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="choose file"
+        android:id="@+id/buttonChoose" />
+
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonViewImage"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/imageViewShow"
+        android:text="upload image" />
+
+
+    <Button
+        android:id="@+id/buttonViewImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/imageViewShow"
+        android:text="view image" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonChoose"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:padding="100dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+
+</RelativeLayout>

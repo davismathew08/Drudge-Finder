@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/w_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/upload_photo"
+        android:icon="@drawable/ic_insert_photo_black_24dp"
+        android:title="Work Photo" />
+    <item
+        android:id="@+id/work_assignment"
+        android:icon="@drawable/ic_insert_photo_black_24dp"
+        android:title="Work assignments" />
+    <item
+        android:id="@+id/w_logout"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="Logout" />
+
+
+</menu>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestOne</string>
+    <string name="Open">TestOne</string>
+    <string name="Close">TestOne</string>
+    <string name="title_activity_customer">Customer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="spinner_array">
+        <item>work_type</item>
+        <item>place</item>
+    </string-array>
+</resources>

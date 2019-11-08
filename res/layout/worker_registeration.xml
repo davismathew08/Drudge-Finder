@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daviz.testone.MainActivity"
+
+    android:id="@+id/rl1"
+    tools:ignore="InvalidId">
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Worker Registeration" />
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/e2"
+        android:layout_marginTop="18dp"
+        android:layout_toStartOf="@+id/bsave"
+      />
+
+    <EditText
+        android:id="@+id/e4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/spinner"
+        android:ems="10"
+        android:hint="Rate/Hour"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/e2"
+        android:layout_below="@+id/e4"
+        android:ems="10"
+        android:hint="Gmail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/e6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/e6"
+        android:layout_below="@+id/e6"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/e8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="21dp"
+        android:layout_toStartOf="@+id/e9"
+        android:ems="10"
+        android:hint="Place"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/e9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/e8"
+        android:layout_alignBottom="@+id/e8"
+        android:layout_alignStart="@+id/e4"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:hint="District"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/blocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_below="@+id/e8"
+        android:text="Click to add work location" />
+
+    <Button
+        android:id="@+id/bsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:onClick="onsaveworker"
+        android:text="SAVE" />
+
+    <TextView
+        android:id="@+id/tlatlong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/e4"
+        android:layout_below="@+id/blocation"
+        android:layout_marginTop="13dp" />
+
+
+</RelativeLayout>
